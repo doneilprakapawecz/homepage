@@ -1,0 +1,32 @@
+h1 {
+    color: tomato;
+}
+
+p {
+    color: darkblue;
+}
+
+body {
+    background: #fefefe;
+}
+
+h2 {
+    color: #1460aa;
+}
+h6{
+    color:green;
+}
+
+.mainheader {
+    color: yellow;
+    background: pink;
+    font-size: 64px;
+}
+
+.sectionheadre {
+    color: blue;
+}
+
+#Pamietniczek {
+    color: orange;
+}
