@@ -1,0 +1,26 @@
+body{
+    background: black;
+}
+.container{
+    margin: 120px auto 0px  auto;
+    width: 500px;
+    background: red;
+
+}
+
+.opcja1{
+    font-size: 24px;
+    color:blue;
+    background: yellow;
+    text-align: center;
+    text-decoration: underline;
+}
+.opcja2{
+    color:green;
+}
+.opcja3{
+    text-decoration: none;
+}
+.opcja4{
+    background: black;
+}

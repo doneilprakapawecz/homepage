@@ -6,46 +6,54 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Korsan</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="normalize.css">
 <style>
 
 </style>
 </head>
 
 <body>
-	<header>
-		<a href="index.html">Strona głóna</a>
+	<div id="powrot"></div>
+	<header class="nawigacja">
+		<ul class="nawigacja__lista">
+			<li class="nawigacja__lista--element"><a class="link" href="#powrot" id="glowna">Strona głóna</a></li>
+			<li class="nawigacja__lista--element"><a class="link" href="#tools">Narzędzia</a></li>
+			<li class="nawigacja__lista--element"><a class="link" href="#practise">Ćwiczenia</a></li>
+		</ul>
 	</header>
-	<main>
-		<header>
+	<main class="main">
+		<header class="navigation">
 			<h1 class="mainheader">Maciek Korsan - Strona domowa - lekcja gita</h1>
 		</header>
 
-		<section>
-			<h3 class="sectionheader">Kim jestem?</h3>
-			<p>Hej Na <b>co dzień</b> uczę wspaniałych ludzi tajnej sztuki frontendu i pracuje w firmie o ciężko
+		<section class="sekcja">
+			<h3 class="thirdheader">Kim jestem?</h3>
+			<p class="paragrath">Hej Na <b>co dzień</b> uczę wspaniałych ludzi tajnej sztuki frontendu i pracuje w
+				firmie o ciężko
 				zapisywalnej
 				nazwie:
 				<strong>EYEDEA</strong>>. Poza tym bardzo lubię robić zdjęcia i latać dronem. Witam cię na mojej stronie
 				domowej, mam nadzieje, że
 				znajdziesz tu trochę
 				przydatnych rzeczy.<br>
-				<a href="#Pamietniczek">Przejdź do pamiętniczka</a>
+				<a class="link" href="#Pamietniczek">Przejdź do pamiętniczka</a>
 			</p>
 		</section>
-		<section id="Pamietniczek">
-			<h2>Pamiętniczek</h2>
-			<h3>Jak stworzyć prawidłowego HTML-a?</h3>
-			<p>Tworzenie zgodnego ze standardami <i>HTML-a</i> to sztuka, którą do perfekcji opanowało niewielu. Jeśli
+		<section id="Pamietniczek" class="diaryheader">
+			<h2 class="secondheader">Pamiętniczek</h2>
+			<h3 class="thirdheader">Jak stworzyć prawidłowego HTML-a?</h3>
+			<p class="paragrath">Tworzenie zgodnego ze standardami <i>HTML-a</i> to sztuka, którą do perfekcji opanowało
+				niewielu. Jeśli
 				chcesz
 				stać
 				się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego czasu... <br>
-				<a href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
+				<a class="link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
 			</p>
-			<h6>test koloru</h6>
 		</section>
 		<section>
-			<h3>Czy nagrywanie szkolenia to <em>prosta</em> sprawa?</h3>
-			<p>Na początku myślałem, że całe szkolenie nagram w dwa tygodnie (o ja naiwny) Samo planowanie rzeczy rzeczy
+			<h3 class="thirdheader">Czy nagrywanie szkolenia to <em>prosta</em> sprawa?</h3>
+			<p class="paragrath">Na początku myślałem, że całe szkolenie nagram w dwa tygodnie (o ja naiwny) Samo
+				planowanie rzeczy rzeczy
 				zajeło dużo więcej! Na szczęście dzięki wsparciu bliskich i sporej mo motywacji udało mi się wytworzyć
 				schemat
 				nagrywania, który każdego
@@ -53,13 +61,38 @@
 			</p>
 		</section>
 		<section>
-			<h3>stosowanie narzędzi</h3>
-			<p><a href="podstrona2.html">codepen</a></p>
-			<p><a href="podstrona3.html">w3 walidator</a></p>
-			<p><a href="podstrona4.html">kanban</a></p>
-			<p><a href="podstrona5.html">can I use?</a></p>
-			<p><a href="podstrona6.html">rasberry pi</a></p>
-			<p><a href=""></a>emoji</p>
+			<h3 class="thirdheader">Czy nagrywanie szkolenia to <em>prosta</em> sprawa?</h3>
+			<p class="paragrath">Na początku myślałem, że całe szkolenie nagram w dwa tygodnie (o ja naiwny) Samo
+				planowanie rzeczy rzeczy
+				zajeło dużo więcej! Na szczęście dzięki wsparciu bliskich i sporej mo motywacji udało mi się wytworzyć
+				schemat
+				nagrywania, który każdego
+				dnia przybliża mnie do skończenia pracy,
+			</p>
+		</section>
+		<section>
+			<h3 class="thirdheader" id="tools">stosowanie narzędzi</h3>
+			<p class="paragrath"><a class="link" href="podstrona2.html">codepen</a></p>
+			<p class="paragrath"><a class="link" href="podstrona3.html">w3 walidator</a></p>
+			<p class="paragrath"><a class="link" href="podstrona4.html">kanban</a></p>
+			<p class="paragrath"><a class="link" href="podstrona5.html">can I use?</a></p>
+			<p class="paragrath"><a class="link" href="podstrona6.html">rasberry pi</a></p>
+			<p class="paragrath"><a class="link" href="podstrona7.html">emoji</a></p>
+			<p class="paragrath"><a class="link" href="podstrona8.html">devdocs.io</a></p>
+			<p class="paragrath"><a class="link" href="guzik.html">guzik</a></p>
+			<p class="paragrath"><a class="link" href="figma.html">figma</a></p>
+		</section>
+		<section>
+			<h3 class="thirdheader" id="practise">Ćwiczenia</h3>
+			<p class="paragrath"><a class="link" href="pudełko.html">pudełko</a></p>
+			<p class="paragrath"><a class="link" href="bem.html">bem</a></p>
+			<p class="paragrath"><a class="link" href="flex.html">flex</a></p>
+			<p class="paragrath"><a class="link" href="tlo.html">tło</a></p>
+			<p class="paragrath"><a class="link" href="js.html">js</a></p>
+		</section>
+		<section>
+			<h3 class="thirdheader">Rzeczy do ogarnięcia</h3>
+			<p>gradienty</p>
 		</section>
 	</main>
 	<footer>

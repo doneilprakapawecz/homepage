@@ -1,0 +1,14 @@
+.page{
+    background-image: url('https://audycjekulturalne.pl/wp-content/uploads/2018/12/zacheta_mat_pras.jpg');
+   min-height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: rgba(244, 55, 88, 0.1)
+} 

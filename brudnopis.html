@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"class="pole--js">
+    <input type="submit"class="sprawdzam--js"value="sprawdzam">
+    <div class="wynik"></div>
+    <script>
+         let sprawdzam=document.querySelector('.sprawdzam--js');
+        sprawdzam.addEventListener('click',sprawdzam1);
+
+        function sprawdzam1()
+        {
+           let pole = document.querySelector('.pole--js').value;
+           let wynik =  document.querySelector('.wynik');
+           wynik.innerHTML=pole;
+        }
+    </script>
+</body>
+</html>

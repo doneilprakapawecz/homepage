@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>flex</title>
+</head>
+
+<body>
+    <a class="link" href="index.html" id="glowna">Strona głóna</a>
+
+    <div class="container"></div>
+
+    <div class="flex">
+        <div class="flex__items">1</div>
+        <div class="flex__items">2</div>
+        <div class="flex__items">3</div>
+        <div class="flex__items">4</div>
+        <div class="flex__items flex__items--bigger">5</div>
+        <div class="flex__items flex__items--centered">6</div>
+        <div class="flex__items">7</div>
+        <div class="flex__items">8</div>
+    </div>
+    <script>
+        let ilos_divow=12;
+        let zamieniony="";
+        function zmiana()
+        {
+            for(i=0;i<ilos_divow;i++)
+            {
+               if(i%2!=0)
+               {
+                   if(i<ilos_divow-1) zamieniony=zamieniony+'<div class="squere squere--yellow"><div>';
+                   else zamieniony=zamieniony+'<div class="squere squere--yellow"><br><br><br>Przez Romana<div>';
+               }
+               else
+               { 
+                   if(i<ilos_divow-1) zamieniony=zamieniony+'<div class="squere squere--blue"><div>';
+                    else zamieniony=zamieniony+'<div class="squere squere--blue"><br><br><br>Przez Romana<div>';
+               }
+            }
+        }
+        zmiana();
+        document.querySelector('.container').innerHTML=zamieniony;
+    </script>
+</body>
+
+</html>

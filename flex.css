@@ -1,0 +1,80 @@
+html{
+    box-sizing: border-box;
+}
+*,*:after,*:before
+{
+    box-sizing: inherit;
+}
+body{
+    background: black;
+   
+}
+
+.container{
+    margin: 10px auto 0 auto;
+    width: 1000px;
+    z-index: 1;
+}
+.squere{
+    width: 200px;
+    height: 200px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 110px;
+    color: green;
+}
+
+.squere--yellow{
+    border-color: yellow;
+}
+.squere--blue{
+    border-color: blue;
+}
+.squere--yellow:hover, .squere--blue:hover{
+    background: black;
+}
+.flex{
+    background:#666;
+    color: #aaa;
+    display: flex;
+   min-height: 100vh;
+    border: 3px solid white;
+   /* flex-direction: row;
+    flex-wrap: wrap;*/
+    /*zamiast tego można:*/
+    flex-flow: row nowrap;
+    /*ustawianie elementów wzdłuż osi flex-direction*/
+    justify-content: space-around;/*flex-start, flex-end, center, space-between,space-around*/
+    /*ustawianie elementów do osi przeciwnej flex-direction*/
+    align-content: center; /*stretch*/
+    align-items: baseline; /*baseline*/
+}
+.flex__items{
+    border: 1px solid yellow;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    background: #222;
+    border-radius:50%;
+     order: 1; /*order może zmieniać kolejność elementów wewnącz flexboxa*/
+
+  /*flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 75px;*/
+
+    flex: 1 0 75px; /*flex: <flex-grow> <flex-shrink> <flex-basic>*/
+}
+.flex__items--bigger{
+    font-size: 150px;
+    flex-grow: 3;
+}
+.flex__items--centered{
+    align-self: baseline;
+    order: 0; /*ma niższą wartość wieć loduje na początku*/
+    flex-grow: 2;
+    flex-shrink: 2;
+}
