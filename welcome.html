@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button{
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="link" href="index.html">Strona głóna</a>
+    </header>
+    <main class="main">
+        <article> 
+            <h1 class="mainheader" >Witaj przybyszu</h1>
+            <p>Jak masz na imię?</p>
+            <input type="text" class="name">
+            <p>Ilem masz lat?</p>
+            <input type="text" class="age"><br><br>
+            <button class="button">naciśnij</button>
+          
+        </article>
+    </main>
+    <footer>
+            
+    </footer>
+    <script>
+        const button=document.querySelector('.button');
+        button.addEventListener('click',task);
+        function task()
+        {
+            age=document.querySelector('.age').value;
+            name=document.querySelector('.name').value;
+        
+            if(age<18)alert(` ${name}, strona może zawierać materiały nieodpowiednie dla osób niepełnoletnich, wróć kiedy dorośniesz!`);
+            else alert(`${name}, strona nie zawiera nic ciekawego!`);
+        }
+        let age;
+        let name;
+    </script>
+</body>
+
+</html>
