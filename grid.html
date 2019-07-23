@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body{
+            background-color: slateblue;
+            }
+            .grid{
+                display: grid;
+                grid-template-areas: "header header header"
+                                     "kkk.nav"
+                                     "footer footer footer";
+                grid-template-columns: 1fr 100px 200px;
+                grid-gap: 16px 16px;
+            }
+            .grid__item{
+                background: yellow;
+                grid-column-start: 1;
+                grid-row-start: 1;
+                grid-column-end:3 ;
+                grid-row-end: 3;
+                z-index: -1;
+            }
+            .header{
+                grid-area: header;
+                text-align: center;
+            }
+            .article{
+                grid-area: kkk;
+            }
+           .nav{
+                grid-area: nav;
+            }
+            .footer{
+                grid-area: footer;
+                text-align: center;
+            }
+            div{
+                display: flex;
+            }
+            /**/
+    </style>
+</head>
+<body>
+        <header>
+                <a class="link" href="index.html">Strona głóna</a>
+        </header>
+      <main class="grid">
+        <header class="header"><p>my page</p></header>
+        <article class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsa perferendis adipisci maiores autem aliquam beatae mollitia id odio? Quaerat consequatur officiis delectus tempora velit provident sint rerum neque quisquam.</article>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">page 1</a></li>
+                <li><a href="#">page 2</a></li>
+                <li><a href="#">page 3</a></li>
+                <li><a href="#">page 4</a></li>
+                <li><a href="#">page 5</a></li>
+            </ul>
+        </nav>
+        <footer class="footer">Welcome to hell</footer>
+        <div class="grid__item"></div>
+      <main>
+
+
+</body>
+</html>
