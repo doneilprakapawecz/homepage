@@ -30,7 +30,7 @@ function zmiana(){
     }
 }
 
-button.addEventListener('click',zmiana);*/
+button.addEventListener('click',zmiana);
 let zmienna=10;
 for(let i = 0; i < zmienna; i++)
 {
@@ -87,3 +87,37 @@ for(let opis_tablicy of opis_metod)
 {
     console.log(opis_tablicy);
 }
+*/
+let button = document.querySelector('.header__button--js');
+const zawartosc = document.querySelector('.mainheader--js').innerHTML;
+
+let flaga = 0;
+const nowa_zawartosc = "zmiana na bociana";
+/*button.addEventListener('click', zmiana);
+function zmiana() {
+    let zamiana = "";
+    if (flaga == 0) {
+        zamiana = zawartosc;
+        flaga = 1;
+    }
+    else {
+        zamiana = nowa_zawartosc;
+        flaga = 0;
+    }
+
+    document.querySelector('.mainheader--js').innerHTML = zamiana;
+}*/
+button.addEventListener('click', (e) => {
+    let zamiana = "";
+    if (flaga == 0) {
+        zamiana = nowa_zawartosc;
+        flaga = 1;
+    }
+    else {
+        zamiana = zawartosc;
+        flaga = 0;
+    }
+
+    document.querySelector('.mainheader--js').innerHTML = zamiana;
+    
+});

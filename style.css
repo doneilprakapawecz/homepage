@@ -47,6 +47,7 @@ body {
     box-sizing: border-box;
     padding: 16px; 
     padding-left: 0;
+    text-align: center;
 }
 .main{
     width: 60%;
@@ -107,8 +108,32 @@ body {
 }
 .odnosniki{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
+    flex-direction:row;
 }
 .footer{
     text-align: center;
+}
+.grid--diary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:48px;
+    grid-row-gap:16px;
+}
+
+@media screen and (min-width:1024px){
+    .grid--diary{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .main{
+        width: 80%;
+    }
+
+}
+@media screen and (max-width:624px){
+    .grid--diary{
+        grid-template-columns:1fr;
+        background: gray;
+    }
+
 }

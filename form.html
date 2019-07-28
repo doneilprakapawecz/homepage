@@ -7,18 +7,90 @@
     <title>formularz</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .main{
+            display: flex;
+            max-width: 1000px;
+            justify-content:start;
+            min-height: 100vh;
+            margin-top:50px;
+            margin-left: 200px;
+        }
+
+    </style>
 </head>
 <body>
         <header>
                 <a class="link" href="index.html">Strona głóna</a>
         </header>
-    <form action="">
-        <p style="margin-left: 100px;">
-            <label for="pole">
-                Pole formularza
-                <input type="text"name="f_pole"id="pole"placeholder="napisz coś">
-            </label>
-        </p>
-    </form>
+    <main class="main">    
+        <form action="https://dev.cotenfrontend.pl"method="post">
+            <p>
+                <label for="pole">
+                    Pole formularza
+                    <input type="text" required name="name"id="pole"placeholder="napisz coś">
+                </label><br><br>
+
+                <label for="pole2">
+                    Pole formularza
+                    <input type="text"name="surname"id="pole2"placeholder="napisz coś"value="spep by step">
+                </label>
+            </p>   
+                <fieldset>
+                    <legend>kiego</legend>
+                    <label for="radio1">wybór_1</label>
+                    <input type="radio"name="radio1"id="radio1">
+                    <label for="radio2">wybór_2</label>
+                    <input type="radio"name="radio2"id="radio2">
+                    <label for="radio3">wybór_3</label>
+                    <input type="radio"name="radio3"id="radio3">
+                    <label for="radio4">wybór_4</label>
+                    <input type="radio"name="radioa1"id="radio4">
+                    <label for="radio5">wybór_5</label>
+                    <input type="radio"name="radioa1"id="radio5">
+                </fieldset>
+            <p>
+                <label for="checkbox1">zaznacz: </label>
+                <input type="checkbox" name="checkbox-name" id="checkbox1">
+                <label for="checkbox2">zaznacz: </label>
+                <input type="checkbox" name="checkbox-name" id="checkbox2">
+            </p>
+            <p>
+                <label for="number">numer</label>
+                <input type="number" name="number" id="number"value="77">
+                <label for="e">email</label>
+                <input type="email" required name="email" id="e">
+                <label for="t">telefon</label>
+                <input type="tel" name="tel" id="t">
+            </p>
+            <p>   
+                <input type="range" name="range" id="range"min="0"max="100"step="1"value="0">
+            </p>  
+            <p>
+                <label for="password">password</label>
+                <input type="password" name="pas"required id="password"pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+           </p> 
+           <p>
+                <label for="file">document</label>
+                <input type="file" name="file" id="file">
+           </p>
+           <p>
+               <label for="select">opcje</label>
+               <select id="select"name="select">
+                   <option value="zgodziła się">yes</option>
+                   <option value="nic z tego">no</option>
+                   <option value="może kiedyś">maybe</option>
+               </select>
+           </p>
+           <p>
+               <label for="textarea">napisz coś</label>
+               <textarea name="textarea" id="textarea">mus coś napisać</textarea>
+           </p>
+           <p>
+               <input type="submit" name="" id=""value="send the form">
+           </p>
+        </form>
+    </main>
+
 </body>
 </html>

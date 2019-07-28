@@ -15,14 +15,15 @@
 <body>
 	<header class="nawigacja">
 		<ul class="nawigacja__lista">
-			<li class="nawigacja__lista--element"><a class="link" href="#powrot" id="glowna">Strona głóna</a></li>
+			<li class="nawigacja__lista--element"><a class="link" href="#powrot" id="glowna"></a>Strona głóna</a></li>
 			<li class="nawigacja__lista--element"><a class="link" href="#tools">Narzędzia</a></li>
 			<li class="nawigacja__lista--element"><a class="link" href="#practise">Ćwiczenia</a></li>
 		</ul>
 	</header>
 	<main class="main">
 		<header class="navigation">
-			<h1 class="mainheader">Maciek Korsan - Strona domowa - lekcja gita</h1>
+			<h1 class="mainheader mainheader--js">Maciek Korsan - Strona domowa - lekcja gita</h1>
+			<button class="header__button header__button--js">zmiana</button>
 		</header>
 
 		<section class="sekcja">
@@ -38,66 +39,90 @@
 				<a class="link" href="#Pamietniczek">Przejdź do pamiętniczka</a>
 			</p>
 		</section>
-		<section id="Pamietniczek" class="diaryheader">
-			<h2 class="secondheader">Pamiętniczek</h2>
-			<h3 class="thirdheader">Jak stworzyć prawidłowego HTML-a?</h3>
-			<p class="paragrath">Tworzenie zgodnego ze standardami <i>HTML-a</i> to sztuka, którą do perfekcji opanowało
-				niewielu. Jeśli
-				chcesz
-				stać
-				się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego czasu... <br>
-				<a class="link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
-			</p>
-		</section>
-		<section>
-			<h3 class="thirdheader">Czy nagrywanie szkolenia to <em>prosta</em> sprawa?</h3>
-			<p class="paragrath">Na początku myślałem, że całe szkolenie nagram w dwa tygodnie (o ja naiwny) Samo
-				planowanie rzeczy rzeczy
-				zajeło dużo więcej! Na szczęście dzięki wsparciu bliskich i sporej mo motywacji udało mi się wytworzyć
-				schemat
-				nagrywania, który każdego
-				dnia przybliża mnie do skończenia pracy,
-			</p>
-		</section>
-		<section>
-			<h3 class="thirdheader">Czy nagrywanie szkolenia to <em>prosta</em> sprawa?</h3>
-			<p class="paragrath">Na początku myślałem, że całe szkolenie nagram w dwa tygodnie (o ja naiwny) Samo
-				planowanie rzeczy rzeczy
-				zajeło dużo więcej! Na szczęście dzięki wsparciu bliskich i sporej mo motywacji udało mi się wytworzyć
-				schemat
-				nagrywania, który każdego
-				dnia przybliża mnie do skończenia pracy,
-			</p>
-		</section>
+		<article>
+			<header>
+				<h2 class="secondheader"style="text-align:center;">Pamiętniczek</h2>
+			</header>
+			<div class="grid--diary">
+				<section id="Pamietniczek" class="diaryheader">
+
+					<h3 class="thirdheader">Jak stworzyć prawidłowego HTML-a?</h3>
+					<p class="paragrath">Tworzenie zgodnego ze standardami <i>HTML-a</i> to sztuka, którą do perfekcji
+						opanowało
+						niewielu. Jeśli
+						chcesz
+						stać
+						się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego czasu... <br>
+						<a class="link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
+					</p>
+				</section>
+				<section>
+					<h3 class="thirdheader">Czy nagrywanie szkolenia to <em>prosta</em> sprawa?</h3>
+					<p class="paragrath">Na początku myślałem, że całe szkolenie nagram w dwa tygodnie (o ja naiwny)
+						Samo
+						planowanie rzeczy rzeczy
+						zajeło dużo więcej! Na szczęście dzięki wsparciu bliskich i sporej mo motywacji udało mi się
+						wytworzyć
+						schemat
+						nagrywania, który każdego
+						dnia przybliża mnie do skończenia pracy,
+					</p>
+				</section>
+				<section>
+					<h3 class="thirdheader">Czy nagrywanie szkolenia to <em>prosta</em> sprawa?</h3>
+					<p class="paragrath">Na początku myślałem, że całe szkolenie nagram w dwa tygodnie (o ja naiwny)
+						Samo
+						planowanie rzeczy rzeczy
+						zajeło dużo więcej! Na szczęście dzięki wsparciu bliskich i sporej mo motywacji udało mi się
+						wytworzyć
+						schemat
+						nagrywania, który każdego
+						dnia przybliża mnie do skończenia pracy,
+					</p>
+				</section>
+				<section>
+					<h3 class="thirdheader">Czy nagrywanie szkolenia to <em>prosta</em> sprawa?</h3>
+					<p class="paragrath">Na początku myślałem, że całe szkolenie nagram w dwa tygodnie (o ja naiwny)
+						Samo
+						planowanie rzeczy rzeczy
+						zajeło dużo więcej! Na szczęście dzięki wsparciu bliskich i sporej mo motywacji udało mi się
+						wytworzyć
+						schemat
+						nagrywania, który każdego
+						dnia przybliża mnie do skończenia pracy,
+					</p>
+				</section>
+			</div>
+		</article>
 		<div class="odnosniki">
-		<section>
-			<h3 class="thirdheader" id="tools">stosowanie narzędzi</h3>
-			<p class="paragrath"><a class="link" href="podstrona2.html">codepen</a></p>
-			<p class="paragrath"><a class="link" href="podstrona3.html">w3 walidator</a></p>
-			<p class="paragrath"><a class="link" href="podstrona4.html">kanban</a></p>
-			<p class="paragrath"><a class="link" href="podstrona5.html">can I use?</a></p>
-			<p class="paragrath"><a class="link" href="podstrona6.html">rasberry pi</a></p>
-			<p class="paragrath"><a class="link" href="podstrona7.html">emoji</a></p>
-			<p class="paragrath"><a class="link" href="podstrona8.html">devdocs.io</a></p>
-			<p class="paragrath"><a class="link" href="guzik.html">guzik</a></p>
-			<p class="paragrath"><a class="link" href="figma.html">figma</a></p>
-		</section>
-		<section>
-			<h3 class="thirdheader" id="practise">Ćwiczenia</h3>
-			<p class="paragrath"><a class="link" href="pudełko.html">pudełko</a></p>
-			<p class="paragrath"><a class="link" href="bem.html">bem</a></p>
-			<p class="paragrath"><a class="link" href="flex.html">flex</a></p>
-			<p class="paragrath"><a class="link" href="tlo.html">tło</a></p>
-			<p class="paragrath"><a class="link" href="js.html">js</a></p>
-			<p class="paragrath"><a class="link" href="welcome.html">powitanie</a></p>
-			<p class="paragrath"><a class="link" href="form.html">formularz</a></p>
-			<p class="paragrath"><a class="link" href="grid.html">grid</a></p>
-			
-		</section>
-		<section>
-			<h3 class="thirdheader">Rzeczy do ogarnięcia</h3>
-			<p>gradienty</p>
-		</section>
+			<section>
+				<h3 class="thirdheader" id="tools">stosowanie narzędzi</h3>
+				<p class="paragrath"><a class="link" href="podstrona2.html">codepen</a></p>
+				<p class="paragrath"><a class="link" href="podstrona3.html">w3 walidator</a></p>
+				<p class="paragrath"><a class="link" href="podstrona4.html">kanban</a></p>
+				<p class="paragrath"><a class="link" href="podstrona5.html">can I use?</a></p>
+				<p class="paragrath"><a class="link" href="podstrona6.html">rasberry pi</a></p>
+				<p class="paragrath"><a class="link" href="podstrona7.html">emoji</a></p>
+				<p class="paragrath"><a class="link" href="podstrona8.html">devdocs.io</a></p>
+				<p class="paragrath"><a class="link" href="guzik.html">guzik</a></p>
+				<p class="paragrath"><a class="link" href="figma.html">figma</a></p>
+			</section>
+			<section>
+				<h3 class="thirdheader" id="practise">Ćwiczenia</h3>
+				<p class="paragrath"><a class="link" href="pudełko.html">pudełko</a></p>
+				<p class="paragrath"><a class="link" href="bem.html">bem</a></p>
+				<p class="paragrath"><a class="link" href="flex.html">flex</a></p>
+				<p class="paragrath"><a class="link" href="tlo.html">tło</a></p>
+				<p class="paragrath"><a class="link" href="js.html">js</a></p>
+				<p class="paragrath"><a class="link" href="welcome.html">powitanie</a></p>
+				<p class="paragrath"><a class="link" href="form.html">formularz</a></p>
+				<p class="paragrath"><a class="link" href="grid.html">grid</a></p>
+
+			</section>
+			<section>
+				<h3 class="thirdheader">Rzeczy do ogarnięcia</h3>
+				<p>gradienty</p>
+			</section>
 		</div>
 	</main>
 	<footer class="footer">
