@@ -9,7 +9,6 @@ html{
 .paragrath {
     color: darkblue;
     padding-left: 16px;
-    ;
 }
 
 body {
@@ -26,6 +25,9 @@ body {
 .mainheader {
     color: #0e0e8a;
     font-size: 32px;
+}
+.mainheader--red{
+    color:darkred;
 }
 
 .thirdheader {
@@ -84,7 +86,7 @@ body {
     z-index: 1;
 }
 .nawigacja{
-    text-align: center;
+    text-align: left;
     margin-top:25px;
     position: sticky;
     top:5px;
@@ -120,8 +122,12 @@ body {
     grid-column-gap:48px;
     grid-row-gap:16px;
 }
+.navigation__swicher{
+    font-size: 36px;
+    visibility: hidden ;
+}
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) and (max-width:1800px){
     .grid--diary{
         grid-template-columns:1fr 1fr 1fr;
     }
@@ -133,7 +139,39 @@ body {
 @media screen and (max-width:624px){
     .grid--diary{
         grid-template-columns:1fr;
-        background: gray;
+    }
+   
+    .nawigacja__lista{
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        padding: 0;
+        display: none;
+    }
+    .nawigacja__lista--modyfikacja{
+        display: flex;
+    }
+    .nawigacja__lista--element{
+        padding:5px;
+    }
+    .navigation__swicher{
+        visibility: visible;
+        border: none;
+        background: none;
+        justify-content: flex-start;
+        margin-left: 10px;
+        margin-top: 5px;
+        box-decoration-break: none;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media screen and (min-width:1200px){
+    .grid--diary{
+        grid-template-columns:1fr 1fr 1fr 1fr;
     }
 
 }
