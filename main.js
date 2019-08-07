@@ -121,10 +121,19 @@ button.addEventListener('click', (e) => {
     document.querySelector('.mainheader--js').innerHTML = zamiana;
     document.querySelector('.mainheader--js').classList.toggle('mainheader--red');
 });
-let visible__menu=document.querySelector('.navigation__list--js')
-let swicher=document.querySelector('.navigation__swicher--js');
-let opcja1=swicher.innerHTML;
-swicher.addEventListener('click',() =>{visible__menu.classList.toggle('nawigacja__lista--modyfikacja');
-if(swicher.innerHTML=='x')swicher.innerHTML=opcja1;
-else swicher.innerHTML='x';
+let visible__menu = document.querySelector('.navigation__list--js')
+let swicher = document.querySelector('.navigation__swicher--js');
+let opcja1 = swicher.innerHTML;
+swicher.addEventListener('click', () => {
+    visible__menu.classList.toggle('nawigacja__lista--modyfikacja');
+    if (swicher.innerHTML == 'x') swicher.innerHTML = opcja1;
+    else swicher.innerHTML = 'x';
 });
+
+const gwiazdaSmierci = {
+    atak: () => { return console.log(`na rozkaz ${gwiazdaSmierci.wlasciciel}a Bum! Bum!! Bum!!!`) },
+    wlasciciel: 'imperator',
+    nadzorca: 'darthVader',
+    zaloga: 'armiaKlonow',
+    liczbaKlonow: 1000
+};
